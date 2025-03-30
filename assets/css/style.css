@@ -1,0 +1,913 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Monsterrat";
+    color: black;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    outline: none;
+}
+
+@font-face {
+    font-family: "Monsterrat";
+    src: url(../media/fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Monsterrat";
+    src: url(../media/fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: "Monsterrat";
+    src: url(../media/fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Monsterrat";
+    src: url(../media/fonts/Montserrat-Regular.ttf);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.burger{
+    display: none;
+}
+
+.header_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;  
+    padding-top: 20px;  
+}
+
+.logo img {
+    width: 170px;
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+.btn1 {
+    border: none;
+    padding: 6px 25px;
+    border-radius: 10px;
+    background-color: #797979;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: solid 3px #797979;
+}
+
+.btn1:hover {
+    background-color: white;
+    border: solid 3px #0092B2;
+    color: #9F9F9F;
+
+}
+
+.btn11 {
+    border: none;
+    padding: 6px 25px;
+    border-radius: 10px;
+    background-color: #797979;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: solid 3px #797979;
+}
+
+.btn11:hover {
+    background-color: white;
+    border: solid 3px #0092B2;
+    color: #9F9F9F;
+
+}
+
+.reg {
+    display: flex;
+    gap: 30px;
+}
+
+.banner {
+    background: url(../media/banner.png);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner_text {
+    padding-top: 200px;
+}
+
+.sp1 {
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+}
+
+.banner_text h1 {
+    color: white;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.btn2 {
+    border: none;
+    background-color: #0092B2;
+    padding: 10px 30px;
+    margin-top: 20px;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.maginfo {
+    margin-top: 100px;
+
+}
+
+.maginfo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.p1 {
+    text-align: start;
+    color: #008DAC;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.h21 {
+    font-weight: bold;
+    font-size: 30px
+}
+
+.h31 {
+    font-size: 22px;
+    color: #005669;
+    font-weight: 800;
+}
+
+.preim_banner {
+    background: url(../media/preim.png);
+    height: 700px;
+    margin-top: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+}
+
+.preim_text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-bottom: 50px;
+}
+
+.h22 {
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.pr1 {
+    color: white;
+    background-color: #008088;
+    width: 350px;
+    border-radius: 30px;
+    padding: 15px 25px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.preim_inf {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.h21 {
+    text-align: center;
+}
+
+.catalog {
+    margin-top: 100px;
+}
+
+.catcards {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.card1 {
+    width: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+    border: solid 5px #003789;
+    border-radius: 33px;
+}
+
+.card1 img {
+    width: 300px;
+}
+
+.card_img {
+    display: flex;
+    justify-content: center;
+}
+
+.card_txt {
+    font-weight: 800;
+    margin-top: 15px;
+}
+
+.card_bot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn3 {
+    border: none;
+    background-color: #007C97;
+    color: white;
+    border-radius: 10px;
+    padding: 13px 35px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.p2 {
+    font-weight: bold;
+    font-size: 25px;
+    color: #00C3EE;
+}
+
+.catbot {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.specpred {
+    margin-top: 100px;
+}
+
+.spec_cat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.p3 {
+    font-size: 20px;
+    text-decoration: line-through;
+    color: #6D6D6D;
+    font-weight: bold;
+}
+
+.speccards1 {
+    display: flex;
+    gap: 20px;
+}
+
+.btn4 {
+    border: none;
+    background-color: #007C97;
+    color: white;
+    border-radius: 10px;
+    padding: 7px 20px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.price {
+    display: flex;
+    text-align: center;
+    align-items: end;
+    gap: 5px;
+}
+
+.speccards2 {
+    display: flex;
+    gap: 20px;
+}
+
+.h4 {
+    margin-top: 100px;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.review-block {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 700px;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: start;
+    gap: 40px;
+
+}
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.username {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.review-date {
+    font-size: 14px;
+    color: #888;
+    font-weight: 600;
+}
+
+.review-text {
+    font-size: 14px;
+    display:flex; 
+    align-items: center;
+    color: #737373;
+    font-weight: 600;
+
+}
+
+.stars img {
+    width: 130px;
+}
+
+.user-info p {
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.line {
+    height: 4px;
+    background-color: #818181;
+    margin-top: 20px;
+}
+
+
+.footinf {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftfoot a {
+    color: #3F00C5;
+    font-weight: bold;
+}
+
+.rightfoot {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.leftfoot {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.nav1 {
+    font-size: 18px;
+}
+
+.top {
+    display: flex;
+    gap: 16px;
+}
+
+.top img {
+    cursor: pointer;
+    width: 40px;
+}
+
+.bot img {
+    width: 250px;
+}
+
+.p5 {
+    text-align: center;
+    font-weight: bold
+}
+
+.sort {
+    margin-top: 100px;
+    display: flex;
+    gap: 30px;
+
+}
+
+.sortbtn1 {
+    border: solid 3px #008CAB;
+    padding: 8px 20px;
+    background-color: white;
+    color: #acacac;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.sortbtn2 {
+    border: none;
+    padding: 8px 20px;
+    background-color: #008CAB;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.catcards2 {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.ellipses {
+    display: flex;
+    gap: 10px;
+}
+
+.btn5 {
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.leftarrow img {
+    cursor: pointer;
+}
+
+.rightarrow img {
+    cursor: pointer;
+}
+
+.line {
+    margin-top: 100px;
+}
+
+.backarrow {
+    margin-top: 100px;
+}
+
+.cardtovar{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin-top: 86px;
+}
+
+.mainimg img{
+    height: 550px;
+    border: solid #E6E6E6 3px;
+    border-radius: 33px;
+}
+
+.h33{
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.mainbotimg img{
+    height: 120px;
+    border: solid #E6E6E6 3px;
+    border-radius: 20px;
+}
+
+.mainbotimg{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sp2{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.rating img{
+    height: 30px;
+}
+
+.rating p{
+    display: flex;
+    align-items: center ;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.p6{
+    font-size: 25px;
+    color: #8F8F8F;
+    font-weight: 600
+}
+
+.cardtovarright{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.opisanie{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.p7{
+    font-size: 20px;
+    color: #555555;
+    font-weight: 600;
+}
+
+.ctrbot{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.ctrbot p{
+    font-size: 35px;
+    font-weight: bolder;
+
+}
+
+.btn6{
+    border: none;
+    padding: 8px 26px;
+    font-size: 28px;
+    border-radius: 14px;
+    color: white;
+    background-color: #007C97;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn7{
+    border: none;
+    padding: 8px 26px;
+    font-size: 28px;
+    border-radius: 14px;
+    color: white;
+    background-color: #00A1C5;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ctrbtns{
+    display: flex;
+    gap: 10px;
+}
+
+.login_container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 350px;
+    position: relative;
+    margin: 100px auto; 
+}
+
+.login_container img{
+    height: 20px;
+}
+
+.back_button {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    color: gray;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+.password_container {
+    position: relative;
+}
+
+.eye_icon {
+    position: absolute;
+    right: 15px;
+    top: 55%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.eye_icon img{
+    height: 30px;
+}
+
+.checkbox_container {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    gap: 20px;
+}
+
+.checkbox_container img{
+    height: 30px;
+}
+.checkbox_container input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.checkbox_container label {
+    font-size: 14px;
+    color: gray;
+}
+
+.login_button {
+    background-color: #0088a9;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login_button:hover {
+    background-color: #006f89;
+}
+
+.register_link {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #0088a9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register_link:hover {
+    text-decoration: underline;
+}
+
+.terms_text {
+    font-size: 12px;
+    color: gray;
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+@media (max-width: 375px) {
+    .container{
+        max-width: 375px;
+        width: 100%;
+    }
+    header .container{
+        max-width: 375px;
+    }
+    .header_menu{
+        justify-content: space-around;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .catcards{
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 20px;
+    }
+    .speccards1{
+        flex-wrap: wrap;
+    }
+    .speccards2{
+        flex-wrap: wrap;
+    }
+    .footinf{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+    .review-block{
+        width: auto;
+    }
+    .review-header{
+        flex-wrap: wrap;
+    }
+    .banner{
+        height: auto;
+    }
+    .banner_text{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .banner_text>h1{
+        width: 307px;
+    }
+    .maginfo{
+        padding: 0px 10px 0px 10px;
+    }
+    .centfoot>.nav1{
+        display: flex;
+        align-items: center;
+    }
+    .top{
+        justify-content: center;
+    }
+}
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.burger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+}
+
+/* Меню для мобильных */
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-100%); /* Начальная позиция меню за экраном */
+    transition: transform 0.3s ease; /* Плавное изменение положения */
+}
+
+.mobile-menu nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mobile-menu button {
+    width: 100%;
+}
+
+/* Кнопка закрытия меню */
+.close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Стили для мобильного меню (по умолчанию скрыто) */
+.nav-links,
+.reg {
+    display: flex;
+    gap: 20px;
+}
+/* Медиа-запрос для экранов шириной до 375px */
+@media (max-width: 375px) {
+    /* Скрываем стандартную навигацию и кнопки */
+    .nav-links,
+    .reg {
+        display: none;
+    }
+
+    /* Показываем бургер-меню */
+    .burger-menu {
+        display: flex;
+    }
+
+    /* Когда чекбокс выбран (меню открыто), применяем transform для плавного появления */
+    #menu-toggle:checked + .burger-menu + .mobile-menu {
+        display: block;
+        transform: translateY(0); /* Меню плавно появляется сверху вниз */
+    }
+}
+@media (min-width: 1024px) {
+    .catcards{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+    .speccards1,
+    .speccards2{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .header_menu{
+        padding: 20px;
+    }
+    .banner{
+        padding-left: 20px;
+    }
+    .footinf{
+        padding: 0px 20px ;
+    }
+
+    .h4,
+    h2{
+        padding-left: 20px;
+    }
+}
+
+

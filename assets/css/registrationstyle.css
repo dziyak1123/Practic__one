@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Monsterrat";
+    color: black;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    outline: none;
+}
+
+@font-face {
+    font-family: "Monsterrat";
+    src: url(../media/fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Monsterrat";
+    src: url(../media/fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: "Monsterrat";
+    src: url(../media/fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Monsterrat";
+    src: url(../media/fonts/Montserrat-Regular.ttf);
+}
+
+.login_container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 350px;
+    position: relative;
+    margin: 100px auto; 
+}
+
+.login_container img{
+    height: 20px;
+}
+
+.back_button {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    color: gray;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+.password_container {
+    position: relative;
+}
+
+.eye_icon {
+    position: absolute;
+    right: 15px;
+    top: 55%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.eye_icon img{
+    height: 30px;
+}
+
+.checkbox_container {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    gap: 20px;
+}
+
+.checkbox_container img{
+    height: 30px;
+}
+.checkbox_container input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.checkbox_container label {
+    font-size: 14px;
+    color: gray;
+}
+
+.login_button {
+    background-color: #0088a9;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login_button:hover {
+    background-color: #006f89;
+}
+
+.register_link {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #0088a9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register_link:hover {
+    text-decoration: underline;
+}
+
+.terms_text {
+    font-size: 12px;
+    color: gray;
+    margin-top: 15px;
+    line-height: 1.4;
+}
